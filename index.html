@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais - Mundo Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo Animal</h1>
+        <nav>
+            <ul>
+                <li><a href="#animais">Animais</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="animais">
+        <h2>Conheça os Animais</h2>
+        <div class="animal-container">
+            <div class="animal-card" onclick="mostrarDetalhes('gato')">
+                <img src="https://www.pexels.com/pt-br/foto/gatinho-branco-e-cinza-em-tecido-estampado-leopardo-marrom-e-preto-45201/ alt="Gato">
+                <p>Gato</p>
+            </div>
+            <div class="animal-card" onclick="mostrarDetalhes('cachorro')">
+                <img src="https://via.placeholder.com/150" alt="Cachorro">
+                <p>Cachorro</p>
+            </div>
+            <div class="animal-card" onclick="mostrarDetalhes('elefante')">
+                <img src="https://via.placeholder.com/150" alt="Elefante">
+                <p>Elefante</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o Mundo Animal</h2>
+        <p>O mundo animal é fascinante, cheio de criaturas incríveis. Explore e aprenda mais sobre os nossos amigos peludos e de outras espécies!</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu email" required>
+            <textarea id="mensagem" placeholder="Sua mensagem..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mundo Animal - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
